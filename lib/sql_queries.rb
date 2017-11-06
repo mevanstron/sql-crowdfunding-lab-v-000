@@ -18,7 +18,7 @@ def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_
   "SELECT users.name, SUM(pledges.amount)
    INNER JOIN pledges
    ON users.id = pledges.user_id
-   GROUP BY users.id
+   GROUP BY users.name
    ORDER BY users.name ASC"
 end
 
